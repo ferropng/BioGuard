@@ -1,0 +1,91 @@
+especie,nome_comum,bioma,categoria_iucn,peso_risco
+Panthera onca,Onça-pintada,Pantanal,NT,2
+Anodorhynchus hyacinthinus,Arara-azul,Pantanal,VU,3
+Myrmecophaga tridactyla,Tamanduá-bandeira,Pantanal,VU,3
+Chrysocyon brachyurus,Lobo-guará,Pantanal,NT,2
+Caiman yacare,Jacaré-do-pantanal,Pantanal,LC,1
+Jabiru mycteria,Tuiuiú,Pantanal,LC,1
+Hydrochoerus hydrochaeris,Capivara,Pantanal,LC,1
+Tapirus terrestris,Anta,Pantanal,VU,3
+Pteronura brasiliensis,Ariranha,Pantanal,EN,4
+Leopardus pardalis,Jaguatirica,Pantanal,LC,1
+Dasyprocta leporina,Cutia,Pantanal,LC,1
+Tayassu pecari,Queixada,Pantanal,NT,2
+Rhea americana,Ema,Pantanal,LC,1
+Phrynops hilarii,Cágado-de-barbiga,Pantanal,LC,1
+Caiman crocodilus,Jacaré-açu,Pantanal,LC,1
+Saguinus bicolor,Sauim-de-coleira,Amazônia,CR,5
+Ateles paniscus,Macaco-aranha,Amazônia,VU,3
+Cacajao calvus,Uacari-branco,Amazônia,VU,3
+Inia geoffrensis,Boto-cor-de-rosa,Amazônia,EN,4
+Pteronura brasiliensis,Ariranha,Amazônia,EN,4
+Harpia harpyja,Gavião-real,Amazônia,NT,2
+Podocnemis expansa,Tartaruga-da-amazônia,Amazônia,VU,3
+Alouatta seniculus,Guariba-vermelho,Amazônia,LC,1
+Cebus albifrons,Macaco-prego,Amazônia,LC,1
+Eira barbara,Irara,Amazônia,LC,1
+Phyllostomus hastatus,Morcego-lanceolado,Amazônia,LC,1
+Arapaima gigas,Pirarucu,Amazônia,EN,4
+Dendrobates tinctorius,Rã-venenosa,Amazônia,LC,1
+Myrmecophaga tridactyla,Tamanduá-bandeira,Amazônia,VU,3
+Panthera onca,Onça-pintada,Amazônia,NT,2
+Chrysocyon brachyurus,Lobo-guará,Cerrado,NT,2
+Pseudalopex vetulus,Raposa-do-campo,Cerrado,NT,2
+Ozotoceros bezoarticus,Veado-campeiro,Cerrado,VU,3
+Leopardus tigrinus,Gato-do-mato-pequeno,Cerrado,VU,3
+Rhea americana,Ema,Cerrado,LC,1
+Cyanocorax cristatellus,Gralha-do-cerrado,Cerrado,LC,1
+Caiman latirostris,Jacaré-do-papo-amarelo,Cerrado,LC,1
+Tapirus terrestris,Anta,Cerrado,VU,3
+Hydrochoerus hydrochaeris,Capivara,Cerrado,LC,1
+Tayassu pecari,Queixada,Cerrado,NT,2
+Dasyprocta leporina,Cutia,Cerrado,LC,1
+Crotalus durissus,Cascavel,Cerrado,LC,1
+Eira barbara,Irara,Cerrado,LC,1
+Alouatta caraya,Bugio-preto,Cerrado,NT,2
+Puma concolor,Onça-parda,Cerrado,LC,1
+Leontopithecus rosalia,Mico-leão-dourado,Mata Atlântica,EN,4
+Brachyteles arachnoides,Muriqui-do-sul,Mata Atlântica,CR,5
+Procnias nudicollis,Araponga,Mata Atlântica,VU,3
+Leopardus tigrinus,Gato-do-mato,Mata Atlântica,VU,3
+Ramphastos toco,Tucanuçu,Mata Atlântica,LC,1
+Didelphis aurita,Gambá-de-orelha-preta,Mata Atlântica,LC,1
+Callithrix penicillata,Sagui,Mata Atlântica,LC,1
+Tamandua tetradactyla,Tamanduá-mirim,Mata Atlântica,LC,1
+Trichechus manatus,Peixe-boi-marinho,Mata Atlântica,VU,3
+Buteogallus coronatus,Gavião-pombo,Mata Atlântica,LC,1
+Cyclarhis gujanensis,Pitiguari,Mata Atlântica,LC,1
+Puma concolor,Onça-parda,Mata Atlântica,LC,1
+Dasyprocta leporina,Cutia,Mata Atlântica,LC,1
+Phyllomedusa bicolor,Perereca-gigante,Mata Atlântica,LC,1
+Alouatta guariba,Bugio-ruivo,Mata Atlântica,CR,5
+Callithrix jacchus,Sagui-do-nordeste,Caatinga,LC,1
+Pseudalopex vetulus,Raposa-do-campo,Caatinga,NT,2
+Leopardus tigrinus,Gato-do-mato,Caatinga,VU,3
+Dendropsophus microcephalus,Perereca,Caatinga,LC,1
+Tyrannus melancholicus,Suiriri,Caatinga,LC,1
+Crotalus durissus,Cascavel,Caatinga,LC,1
+Tapirus terrestris,Anta,Caatinga,VU,3
+Hydrochoerus hydrochaeris,Capivara,Caatinga,LC,1
+Caiman latirostris,Jacaré,Caatinga,LC,1
+Dasyprocta leporina,Cutia,Caatinga,LC,1
+Rhea americana,Ema,Caatinga,LC,1
+Cynomops planirostris,Morcego-de-focinho-curto,Caatinga,LC,1
+Tayassu pecari,Queixada,Caatinga,NT,2
+Ozotoceros bezoarticus,Veado-campeiro,Caatinga,VU,3
+Pygocentrus nattereri,Piranha-vermelha,Caatinga,LC,1
+Ozotoceros bezoarticus,Veado-campeiro,Pampa,VU,3
+Rhea pennata,Ema-do-pampa,Pampa,NT,2
+Lagostomus maximus,Lebre-da-patagônia,Pampa,LC,1
+Puma concolor,Puma,Pampa,LC,1
+Leopardus pardalis,Jaguatirica,Pampa,LC,1
+Hydrochoerus hydrochaeris,Capivara,Pampa,LC,1
+Dasyprocta leporina,Cutia,Pampa,LC,1
+Chrysocyon brachyurus,Lobo-guará,Pampa,NT,2
+Tapirus terrestris,Anta,Pampa,VU,3
+Caiman latirostris,Jacaré,Pampa,LC,1
+Phrynops hilarii,Cágado,Pampa,LC,1
+Cynomops planirostris,Morcego,Pampa,LC,1
+Crotalus durissus,Cascavel,Pampa,LC,1
+Rhea americana,Ema,Pampa,LC,1
+Tayassu pecari,Queixada,Pampa,NT,2
