@@ -20,6 +20,7 @@ from streamlit_folium import st_folium
 from folium.plugins import HeatMap, MarkerCluster, Fullscreen, MiniMap
 from sklearn.cluster import KMeans
 import warnings
+import textwrap
 
 warnings.filterwarnings("ignore")
 
@@ -76,7 +77,7 @@ def load_data(arquivo):
 
 @st.cache_data
 def get_species_data_with_coordinates():
-    """Retorna lista de espécies com coordenadas (igual ao notebook)"""
+    """Retorna lista de espécies com coordenadas"""
     return [
         # --- AMAZÔNIA ---
         {"nome": "🐬 Boto-cor-de-rosa", "lat": -3.0, "lon": -60.0, "bioma": "Amazônia", "risco": "Alto"},
@@ -230,7 +231,6 @@ def calculate_risk_index(df, df_especies):
 # ============================================================
 @st.cache_data
 def create_map_from_notebook(df):
-    """Cria mapa interativo igual ao notebook com espécies e heatmap de queimadas"""
     
     # Detectar colunas
     col_lat = None
@@ -247,18 +247,18 @@ def create_map_from_notebook(df):
     # Limpar dados
     mapa_df = df.dropna(subset=[col_lat, col_lon])
     
-    # Mapa base (igual ao notebook)
+    # Mapa base
     mapa = folium.Map(
         location=[-14, -55],
         zoom_start=4,
         tiles="CartoDB positron"
     )
     
-    # Controles (igual ao notebook)
+    # Controles
     Fullscreen().add_to(mapa)
     MiniMap(toggle_display=True).add_to(mapa)
     
-    # Heatmap de queimadas (igual ao notebook)
+    # Heatmap de queimadas
     heat_data = mapa_df[[col_lat, col_lon]].values.tolist()
     HeatMap(
         heat_data,
@@ -268,10 +268,10 @@ def create_map_from_notebook(df):
         max_zoom=8
     ).add_to(mapa)
     
-    # Cluster de marcadores (igual ao notebook)
+    # Cluster de marcadores
     marker_cluster = MarkerCluster().add_to(mapa)
     
-    # Cores de risco (igual ao notebook)
+    # Cores de risco
     cores_risco = {
         "Baixo": "green",
         "Moderado": "orange",
@@ -279,7 +279,7 @@ def create_map_from_notebook(df):
         "Crítico": "darkred"
     }
     
-    # Adicionar espécies (igual ao notebook)
+    # Adicionar espécies
     especies = get_species_data_with_coordinates()
     for especie in especies:
         popup_html = f"""
@@ -299,7 +299,7 @@ def create_map_from_notebook(df):
             fill_opacity=0.9
         ).add_to(marker_cluster)
     
-    # Legenda (igual ao notebook)
+    # Legenda
     legenda = """
     <div style="
         position: fixed;
@@ -406,7 +406,7 @@ else:
         )
     
     # ============================================================
-    # 🗺️ MAPA INTERATIVO (DO NOTEBOOK)
+    # 🗺️ MAPA INTERATIVO
     # ============================================================
     st.markdown("## 🗺️ Mapa Interativo de Queimadas e Espécies")
     
@@ -574,8 +574,8 @@ else:
     # 📄 RELATÓRIO AMBIENTAL
     # ============================================================
     st.markdown("## 📄 Relatório Ambiental Automático")
-    
-    relatorio = f"""
+
+    relatorio = textwrap.dedent(f"""
     ### 🌎 Relatório Ambiental — BioGuard
     
     #### 🔥 Queimadas Monitoradas
@@ -593,14 +593,14 @@ else:
     - Vulnerável (VU): **{len(df_especies[df_especies['categoria_iucn'] == 'VU'])}**
     
     #### 📊 Distribuição por Bioma
-    """
-    
+    """).strip()
+
     if col_bioma:
         bioma_counts = df[col_bioma].value_counts()
-        for bioma, count in bioma_counts.items():
-            relatorio += f"\n- **{bioma}**: {count:,} queimadas"
-    
-    relatorio += """
+    for bioma, count in bioma_counts.items():
+        relatorio += f"\n- **{bioma}**: {count:,} queimadas"
+
+    relatorio += textwrap.dedent(f"""
     
     #### 🌱 Conclusão
     O BioGuard utiliza dados espaciais do INPE e informações da IUCN Red List para 
@@ -609,8 +609,8 @@ else:
     
     ---
     *Relatório gerado automaticamente pelo BioGuard*
-    """
-    
+""")
+
     st.markdown(relatorio)
     
     # ============================================================
