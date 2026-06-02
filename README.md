@@ -77,7 +77,7 @@ streamlit run app.py
 
 O aplicativo será aberto automaticamente no endereço: `http://localhost:8501`
 
-### 6. Executar o Jupyter Notebook (Opcional)
+### 4. Executar o Jupyter Notebook (Opcional)
 Se desejar explorar a análise de dados passo a passo e o desenvolvimento do algoritmo de agrupamento.
 
 
