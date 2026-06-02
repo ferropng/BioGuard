@@ -336,10 +336,21 @@ def create_map_from_notebook(df):
 # ============================================================
 
 # Header
-st.markdown("# 🌎 BioGuard - Monitoramento de Queimadas")
-st.markdown("### FIAP Global Solution 2026 - Impacto na Fauna Brasileira")
+col_header1, col_header2 = st.columns([1, 4])
+with col_header1:
+    try:
+        st.image("logo.png", width=150)
+    except Exception:
+        pass
+with col_header2:
+    st.markdown("# BioGuard - Monitoramento de Queimadas")
+    st.markdown("### FIAP Global Solution 2026 - Impacto na Fauna Brasileira")
 
 # Sidebar para configurações
+try:
+    st.sidebar.image("logo.png", use_container_width=True)
+except Exception:
+    pass
 st.sidebar.markdown("## ⚙️ Configurações")
 arquivo_dados = st.sidebar.text_input(
     "📁 Caminho do arquivo CSV:",

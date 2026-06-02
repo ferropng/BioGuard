@@ -1,0 +1,38 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+.venv
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# Dados temporários
+*.csv.tmp
+.cache/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
