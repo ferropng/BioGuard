@@ -227,7 +227,7 @@ def calculate_risk_index(df, df_especies):
     }
 
 # ============================================================
-# 🗺️ CRIAR MAPA INTERATIVO (DO NOTEBOOK)
+# 🗺️ CRIAR MAPA INTERATIVO
 # ============================================================
 @st.cache_data
 def create_map_from_notebook(df):
@@ -426,7 +426,7 @@ else:
             mapa = create_map_from_notebook(df)
             if mapa:
                 # Usar key para evitar recarregamento
-                st_folium(mapa, width=1400, height=600, key="fire_map")
+                st_folium(mapa, width=1400, height=600, key="fire_map", returned_objects=[])
             else:
                 st.warning("⚠️ Não foi possível gerar o mapa.")
     else:
